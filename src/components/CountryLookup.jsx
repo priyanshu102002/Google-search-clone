@@ -7,7 +7,6 @@ const CountryLookup = () => {
         const getCountry = async () => {
             const response = await fetch("https://ipapi.co/json/");
             const data = await response.json();
-            console.log(data);
             setCountry(data.country_name);
         };
         getCountry();
