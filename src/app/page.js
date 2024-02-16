@@ -12,14 +12,13 @@ const page = () => {
                     src={
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
                     }
-                    style={{ width: "auto"}}
+                    style={{ width: "auto" }}
                     width={300}
                     height={100}
                     alt="Google"
                     priority
-                    as="div"
                 />
-            <HomeSearch />
+                <HomeSearch />
             </div>
         </>
     );
