@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-const error = ({ error, rest }) => {
+const Error = ({ error, rest }) => {
     useEffect(
         (error, rest) => {
             console.log("error", error);
@@ -14,4 +14,4 @@ const error = ({ error, rest }) => {
     <button className="text-blue-500">Try again</button></div>;
 };
 
-export default error;
+export default Error;
