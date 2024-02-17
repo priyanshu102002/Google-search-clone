@@ -3,12 +3,10 @@ import Link from "next/link";
 import React from "react";
 
 const ImageSearch = async ({ searchParams }) => {
+    
     // For loading effect
-    await new Promise((resolve) => {
-        setTimeout(() => {
-            resolve();
-        }, 1000);
-    });
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     const startIndex = searchParams.start || '1';
     const response = await fetch(
         `https://www.googleapis.com/customsearch/v1?key=${process.env.NEXT_PUBLIC_API_KEY}&cx=${process.env.NEXT_PUBLIC_CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image&start=${startIndex}`
