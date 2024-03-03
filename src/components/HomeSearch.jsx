@@ -41,7 +41,7 @@ const HomeSearch = () => {
                 <AiOutlineSearch className="text-xl text-zinc-500" />
                 <input
                     type="text"
-                    className="flex-grow focus:outline-none"
+                    className="flex-grow focus:outline-none pl-3"
                     onChange={(e) => setInput(e.target.value)}
                 />
                 <BsFillMicFill className="text-lg" />
